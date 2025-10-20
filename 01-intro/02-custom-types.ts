@@ -34,6 +34,8 @@ interface NewInterface {}
     flies: false;
   }
 
+  let pluckster: Chicken = {};
+
   interface Peacock extends BirdType {
     colourful: true;
     flies: false;
