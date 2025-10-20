@@ -13,7 +13,7 @@ const viewCount: number = 1250;
 const author = {
   name: "Jane Smith",
   email: "jane.smith@bbc.co.uk",
-  department: "News"
+  department: "News",
 };
 
 // ===== PART 2: CREATING INTERFACES =====
@@ -28,6 +28,15 @@ interface Article {
   viewCount: number;
 }
 
+type ArticleType = {
+  id: number;
+  headline: string;
+  content: string;
+  author: string;
+  isPublished: boolean;
+  viewCount: number;
+};
+
 // Interface for an author
 interface Author {
   name: string;
@@ -41,17 +50,18 @@ interface Author {
 const sampleArticle: Article = {
   id: 1,
   headline: "UK Weather: Storm Brings Heavy Rain",
-  content: "A severe weather warning has been issued across the UK as Storm Emma brings heavy rain and strong winds to most regions.",
+  content:
+    "A severe weather warning has been issued across the UK as Storm Emma brings heavy rain and strong winds to most regions.",
   author: "Jane Smith",
   isPublished: true,
-  viewCount: 1250
+  viewCount: 1250,
 };
 
 // Sample author using the Author interface
 const sampleAuthor: Author = {
   name: "Jane Smith",
   email: "jane.smith@bbc.co.uk",
-  department: "News"
+  department: "News",
 };
 
 // ===== PART 4: SIMPLE FUNCTIONS =====
@@ -95,10 +105,11 @@ console.log("Author Info:", getAuthorInfo(sampleAuthor));
 const article2: Article = {
   id: 2,
   headline: "Technology: New AI Breakthrough",
-  content: "Scientists have made a significant breakthrough in artificial intelligence research.",
+  content:
+    "Scientists have made a significant breakthrough in artificial intelligence research.",
   author: "John Doe",
   isPublished: false,
-  viewCount: 0
+  viewCount: 0,
 };
 
 const article3: Article = {
@@ -107,7 +118,7 @@ const article3: Article = {
   content: "Manchester United won 2-1 against Liverpool in yesterday's match.",
   author: "Sarah Wilson",
   isPublished: true,
-  viewCount: 3400
+  viewCount: 3400,
 };
 
 // Working with the articles
@@ -120,13 +131,13 @@ console.log(getArticleSummary(article3));
 const author2: Author = {
   name: "John Doe",
   email: "john.doe@bbc.co.uk",
-  department: "Technology"
+  department: "Technology",
 };
 
 const author3: Author = {
   name: "Sarah Wilson",
   email: "sarah.wilson@bbc.co.uk",
-  department: "Sport"
+  department: "Sport",
 };
 
 console.log("\nAll Authors:");
@@ -134,4 +145,4 @@ console.log(getAuthorInfo(sampleAuthor));
 console.log(getAuthorInfo(author2));
 console.log(getAuthorInfo(author3));
 
-export {}
+export {};

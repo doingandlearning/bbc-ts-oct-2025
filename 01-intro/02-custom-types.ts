@@ -48,4 +48,17 @@ interface NewInterface {}
 
   let plucky: Chicken = {};
   let rob: Robin = { wings: 2, noctural: true };
+
+  const firstName = "Kevin";
+  let secondName: "Cunningham" | "Das" = "Cunningham";
+
+  secondName = "Das";
+
+  function getVersionNumber(): string {
+    return "";
+  }
+
+  let versionNumber: string;
+
+  versionNumber = String(getVersionNumber());
 }
