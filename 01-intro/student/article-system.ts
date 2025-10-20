@@ -13,13 +13,13 @@ const viewCount = 1250;
 const author = {
   name: "Jane Smith",
   email: "jane.smith@bbc.co.uk",
-  department: "News"
+  department: "News",
 };
 
 // ===== PART 2: CREATING INTERFACES =====
 
 // TODO: Create an interface for a news article
-// Include: id (number), headline (string), content (string), 
+// Include: id (number), headline (string), content (string),
 // author (string), isPublished (boolean), viewCount (number)
 interface Article {
   // Your interface definition here
@@ -66,4 +66,4 @@ function getAuthorInfo(author: Author): string {
 // console.log("Article Summary:", getArticleSummary(sampleArticle));
 // console.log("Author Info:", getAuthorInfo(sampleAuthor));
 
-export {}
+export {};

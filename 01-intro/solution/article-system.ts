@@ -55,7 +55,7 @@ const sampleArticle: Article = {
   author: "Jane Smith",
   isPublished: true,
   viewCount: 1250,
-};
+}; // satisfies
 
 // Sample author using the Author interface
 const sampleAuthor: Author = {
