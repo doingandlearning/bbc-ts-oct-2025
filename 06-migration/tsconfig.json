@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
     "target": "ES2024",
-    "module": "commonjs",
+    "module": "nodenext", // start with commonjs
     "strict": true,
-    "esModuleInterop": true,
+    // "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true, // Allow JavaScript files
-    "checkJs": true, // Type check JavaScript files
-    "noEmit": true // Don't emit files, just type check
+    // "allowJs": true, // Allow JavaScript files
+    // "checkJs": true, // Type check JavaScript files
+    // "noEmit": true // Don't emit files, just type check
+    "outDir": "dist",
+    "verbatimModuleSyntax": true // Add when ready to be in type:module mode
   },
   "include": ["**/*.js", "**/*.ts"],
   "exclude": ["node_modules"]

@@ -7,6 +7,10 @@ function getCircleArea(radius) {
   return radius * radius * PI;
 }
 
+/**
+ *  @param {number} length
+ *  @param {number} width
+  */
 function getRectangleArea(length, width) {
   return length * width;
 }
