@@ -3,7 +3,7 @@
 
 // ===== BEFORE: Traditional null/undefined checking =====
 
-interface User {
+type User = {
   id: number;
   name: string;
   email: string;
@@ -20,7 +20,7 @@ interface User {
     theme?: string;
     notifications?: boolean;
   };
-}
+};
 
 const user1: User = {
   id: 1,
@@ -128,6 +128,7 @@ function getUserThemeModern(user: User): string {
 
 // AFTER: Concise with optional chaining and nullish coalescing
 function displayUserInfoModern(user: User): string {
+  let address = user.address?.city;
   const street = user.address?.street ?? "No street";
   const city = user.address?.city;
   const country =
@@ -272,3 +273,9 @@ console.log(processApiResponse(successResponse));
 console.log(processApiResponse(errorResponse));
 
 export {};
+
+function createUser(name) {
+  return {
+    name: name ?? "Unknown",
+  };
+}
