@@ -1,5 +1,8 @@
+// @ts-check
+
 var PI = 3.14;
 
+// @ts-expect-error - TODO: Deal with implicit any
 function getCircleArea(radius) {
   return radius * radius * PI;
 }
@@ -38,6 +41,7 @@ getArea(circle);
 console.log(circle);
 
 var rectangle = { type: "rectangle", length: 7, width: 4 };
+
 getArea(rectangle);
 console.log(rectangle);
 
@@ -48,3 +52,6 @@ console.log(square);
 var rightTriangle = { type: "rightTriangle", base: 9, height: 4 };
 getArea(rightTriangle);
 console.log(rightTriangle);
+
+/** @type {number | string} */
+let number = 6;
