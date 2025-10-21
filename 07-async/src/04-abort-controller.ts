@@ -1,4 +1,5 @@
 const ac = new AbortController();
+const ac2 = new AbortController();
 
 async function run() {
   try {
@@ -11,6 +12,7 @@ async function run() {
     }
     const result = await response.json();
     console.log(result);
+    return result;
   } catch (error) {
     if (error instanceof Error) {
       if (error.name === "AbortError") {
@@ -22,7 +24,9 @@ async function run() {
   }
 }
 
-run();
+const result = run();
 setTimeout(() => {
   ac.abort();
 }, 10);
+
+console.log(await result);
