@@ -39,6 +39,6 @@ Unit 9: Functional Programming - an exploration on what functional programming i
 
 Unit 10: Error handling - Considering our error handling approach
 
-Unit 11: Creating types from others - utilities, string literals, keyin, keyof, record
+Unit 11: Creating types from others - generics, utilities, keyin, keyof, record
 
 Unit 12: Testing - What are the testing solutions in TS?
