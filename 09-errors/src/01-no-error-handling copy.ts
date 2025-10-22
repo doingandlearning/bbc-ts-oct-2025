@@ -17,6 +17,7 @@ function parse(birthday: string) {
 async function main() {
   const input = await ask();
   const date = parse(input);
+  console.log(date);
   console.log(`Your birthday is ${date.toISOString()}`);
 }
 
