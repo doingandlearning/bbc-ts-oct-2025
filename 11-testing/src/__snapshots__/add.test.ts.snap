@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`error if i try to add non-numbers 2`] = `[TypeError: Both arguments should be numbers.]`;
